@@ -1,0 +1,41 @@
+
+// Eric Yalov
+// CSCI 271
+// Lesson 4 - Iteration and Loop Patterns
+// Program : (while Example - Class Average)
+// Description: A counter-controlled iteration statement
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int total = 0;
+    int counter = 1;
+    
+    while (counter <= 10) {
+        int grade;
+        cin >> grade;
+        total += grade;
+        counter++;
+    }
+    
+    double average = static_cast<double>(total) / 10;
+    cout << average;
+    
+    return 0;
+}
+
+// Reflection:
+// 1. I understood how to use while as a counter-controlled iteration statement
+// 2. Compiling this program was actually pretty easy. The only hard part was that I mistakenly put the int counter to 0 instead of 1, 
+// making me input 11 digits instead of 10
+// 3. I needed to review the slides in order to understand how exactly a while statement works
+// 4. No AI was utilized here
+// 5. I learned what an iteration was, and how important each component is. For example, if you don't update at the end, an infinite loop will occur
+// You also need a condition for this loop, as it acts as a rule within the loop. Without this rule, the loop won't work at all.
+
+
+
+
